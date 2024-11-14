@@ -1,0 +1,23 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+const EXPERIENCE = [
+{
+date: "Junio 2024 - Octubre 2024",
+title: "Trainee Frontend Developer",
+company: "Dispromèdia - Agència Web",
+description:
+  "Responsable de maquetación y diseño de páginas web, colaborando con el equipo de desarrollo para garantizar una experiencia de usuario óptima. Participación en el desarrollo de sitios corporativos como <a href='https://www.uetarrega.cat' target='_blank' class='inline-flex items-center text-yellow-500 dark:text-yellow-200 dark:hover:text-yellow-300 hover:text-yellow-700'>www.uetarrega.cat</a>, aportando mejoras y sugerencias de valor. Gestión de tareas de actualización y mantenimiento web, asegurando estabilidad y continuidad en los proyectos.",
+link: "https://drive.google.com/file/d/1MrlQArib3KOZZMTE_UMKPa-wR9CGQ_kq/view?usp=sharing"
+},
+]
+---
+
+<ol class="relative mt-16">
+{
+EXPERIENCE.map((experience) => (
+  <li class="">
+    <ExperienceItem {...experience} />
+  </li>
+))
+}
+</ol>
